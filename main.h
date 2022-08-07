@@ -21,7 +21,7 @@ void println(const String format, ...) {va_list ap;char buf[4096];va_start(ap, f
 #pragma pack(push, 1)
 typedef struct _System{
     struct _OUT_{
-        void (*print)(const String, ...);
+        void (*printf)(const String, ...);
         void (*println)(const String, ...);
     }out;
 }Sys;
